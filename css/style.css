@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Josefin+Slab:wght@300&display=swap'); /* imported fonts from Google to be used on webpage */
+
+/* edits to entire areas - fonts, margins, backgrounds, alignment and padding */
+
+body {
+  background-image: url('https://gdurl.com/kn19');
+  background-attachment: fixed;
+  background-color: rgb(166, 206, 185);
+  font-family: 'Nanum Gothic', sans-serif;
+  flex-direction: column;
+}
+
+header, footer {
+  background-color: rgb(0, 65, 48);
+  color: aliceblue;
+  text-align: center;
+  padding: 3% 0 3% 0;
+}
+
+/* edits to particular sections - fonts, margins, alignment and padding */
+
+main {
+  padding: 5% 0 5% 0;
+  background-color: #a6ceb9bf; 
+}
+
+h1 {
+  font-family: 'Josefin Slab', serif;
+  font-size: 55px;
+  line-height: 50%;
+  letter-spacing: 10px;
+  font-weight: lighter;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+h3 {
+  text-align:center;
+  padding-top:30px;
+}
+
+/* a center column for my main content */
+.column {
+  width:80%;
+  margin: 0 auto;
+  padding-top:20px;
+  background-color: #cae6d8f2;
+  border-radius: 25px;
+}
+
+/* this edits our horizontal ruler to it's pretty color and specific size */
+hr {
+  border: none;
+  background-image: url('https://gdurl.com/kn19');
+  background-attachment: fixed;
+  background-color: rgba(47, 86, 50, 0);
+  width: 75%;
+  height: 5px;
+}
+
+/* these rules edit our hyperlink text - we only have one of this type on this page right now */
+a:link, a:visited {
+color: rgb(31, 87, 56);
+}
+
+a:hover {
+letter-spacing:5px;
+font-weight: bold;
+}
+
+a:active {
+color: yellow;
+}
+
+
+/*using "center" to center entire div content */
+.center {
+  text-align:center;
+}
+
+/* rounded corners */
+.round {
+  border-radius:5%;
+}
+
+/* edit a single line of text */
+.special {
+  color: #ffffff;
+  font-size: 200%;
+  letter-spacing: 5%;
+  font-style: italic;
+  margin: 0;
+  line-height: 5%;
+  padding: 0 0 5% 0;
+  width: 100%;
+  display: inline;
+}
+
+/* sizing my buttons */
+.buttons {
+  width: 50%;
+  margin: auto;
+}
+
+/* these create a more uniform/consolidated look between certain divs*/
+.space {
+  padding-bottom:40px;
+}
+
+.wrapper {
+  width:75%;
+  margin:auto;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  padding-bottom: 5%;
+}
+
+.item-double {
+  flex: 2;
+}
+
+@media all and (min-width:800px) {
+  .group {
+    flex-direction: row;
+  }
+  .special {
+    letter-spacing: 5px;
+  }
+}
+
+img {
+  width:100%;
+}

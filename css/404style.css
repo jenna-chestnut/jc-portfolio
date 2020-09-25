@@ -6,22 +6,17 @@ body {
   color: #ffffff;
   text-align: center;
   font-family: 'Kumbh Sans', sans-serif;
-}
-
-.wrappedup {
-  background-image: url(https://gdurl.com/FuNv);
+  background-image: url('https://gdurl.com/FuNv');
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom;
-  background-color: #7aae7f ;
-  width: 100%;
-  height: 100%;
+  background-color: #7aae7f;
 }
 
 h1 {
   font-family: 'Kaushan Script', cursive;
   font-size: 100px;
-  padding-top: 15vh;
+  padding-top: 15%;
   margin: 0 auto;
 }
 
@@ -34,15 +29,18 @@ h3 {
 }
 
 .words {
-  background-color: #24211977;
-  border-radius: 15px; 
   margin: 0 auto;
-  width: fit-content;
-  padding: 5px 10px;
+  width: 100%;
+  background-image: url('.././images/black-ink-splash.png');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5% 0 30% 0;
 }
 
 a:link {
  color: #ffffff;
+ text-decoration: none;
 }
 
 a:visited {
@@ -55,4 +53,18 @@ a:hover {
 
 a:active {
  color: #ffa600
+}
+
+@media all and (min-width:700px) {
+  .words {
+    width: 50%;
+    max-width: 600px;
+    padding: 5% 0 15% 0;
+  }
+}
+
+@media all and (min-width: 1500px) {
+  .words {
+    padding: 1% 0 8% 0;
+  }
 }

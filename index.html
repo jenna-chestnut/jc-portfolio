@@ -12,7 +12,15 @@
 <!-- body of the webpage contains all of the visible content -->
 <body>
 
-  <header> <!-- empty header for now with the anticipation of nav bar -->
+  <header> <!-- responsive nav floating over headshot -->
+    <nav class="responsive">
+      <ul id="navbar">
+        <li><a href="./">Home</a></li>
+        <li><a href="#about me">About Me</a></li>
+        <li><a href="#my projects">Projects</a></li>
+        <li><a href="#contact me">Contact Me</a></li>
+      </ul>
+    </nav>
   </header>
 
 <main>
@@ -37,8 +45,8 @@
 
 <hr> <!-- horizontal ruler -->
 
-<div class="lightgreen aboutme">
-  <article id="about me" class="wrapper bottomspace"> <!-- about me -->
+<div class="darkgreen"> <!-- about me -->
+  <article id="about me" class="wide">
     <h3>ABOUT ME</h3> <!-- general description, my love of web and why -->
 
   <p>Since my first login, I've always had a penchant for navigating computer systems. 
@@ -50,19 +58,49 @@
     I know that I want to learn and accomplish much more. 
     Now that I have signed up for the Thinkful Engineering Immersion program, 
     I am taking important steps to making this goal a reality.</p>
+    
 
-    <h4 class="center">LET'S CONNECT</h4> <!-- looking to connect/work with others -->
+    <section class="group spacebetween">
+      <div class ="item bottomspace">
+      <h4 class="center">OUTSIDE OF TECH</h4> <!-- personality outside of work -->
+        During my down time, I love exploring in nature and hiking with my dog 
+        <a href="https://gdurl.com/cHqw" target="_blank">Salem</a>! I love taking pictures and have a Nikon D3300. 
+        I've always enjoyed video games as well. I'm currently into first person survival style games that involve puzzles - Outer Wilds is a personal favorite.
+        I also enjoy singing, painting, and trying/making new foods.
+      </div>
+    
+      <div class ="item bottomspace">
+      <h4 class="center">MILESTONES</h4> <!-- important milestones, will update as time goes :-) -->
+      <ul>
+        <li>Born in Alabama</li>
+        <li>Edited first code in 2006 
+          <br> (think MySpace)</li>
+        <li>Obtained GED</li>
+        <li>Lived in TX, NH, and TN</li>
+        <li>Senior role at a small business
+        <li>Passed first technical interview <br>with Thinkful</li>
+      </ul>
+      </div>
+      </section>
+    </div>
+
+<hr>
+
+    <div class="bubble"> <!--to switch up our look -->
+      <div class="wide">
+    <h4 class="center topspace">LET'S CONNECT</h4> <!-- looking to connect/work with others -->
   <p>My past work history has always involved working with a closely knit team. 
     While I have been able to manage and complete tasks in solitude, 
     cooperation and collaboration can be paramount in successfully achieving goals.
     As someone new and enthusiastic to the field I would love to meet and work with others 
     that have the same passion... whether that be teammates to embrace growth and learning with, or a mentor for guidance.</p>
 
-    <p class="center bottomspace">- If you are looking for a study buddy, a mentee or a future web developer
+    <p class="center">- If you are looking for a study buddy, a mentee or a future web developer
        - <a href="#contact me">let's connect</a>! -</p>
 
+
     <div class="center bottomspace">
-    <h4>SERVICES PROVIDED</h4> <!-- services -->
+    <h4 class="topspace">SERVICES PROVIDED</h4> <!-- services -->
       <p>Static and Dynamic Web Development</p>
       <p>Responsive Design</p>
       <p>Website Redesign</p>
@@ -71,29 +109,7 @@
       <p>Web Based Applications</p>
       <p>Membership Services</p>
       </div>
-
-<section class="group">
-  <div class ="item paddedsides">
-  <h4 class="center">OUTSIDE OF TECH</h4> <!-- personality outside of work -->
-    During my down time, I love exploring in nature and hiking with my dog 
-    <a href="https://gdurl.com/cHqw" target="_blank">Salem</a>!
-    I've always enjoyed video games as well. I'm currently into first person survival style games that involve puzzles - Outer Wilds is a personal favorite.
-    I also enjoy singing, painting, and trying/making new foods.
-  </div>
-
-  <div class ="item">
-  <h4 class="center">MILESTONES</h4> <!-- important milestones, will update as time goes :-) -->
-  <ul>
-    <li>Born in Alabama</li>
-    <li>Edited first code in 2006 <br> (think MySpace)</li>
-    <li>Obtained GED</li>
-    <li>Lived in TX, NH, and TN</li>
-    <li>Senior role at a small business
-    <li>Passed first technical interview <br>with Thinkful</li>
-  </ul>
-  </div>
-  </section>
-
+</div>
 </article>
 </div>
 
@@ -105,36 +121,36 @@
 
 <div class="group bottomspace"> <!--contains all projects-->
     
-<div class="item-double paddedsides"> <!-- premier project -->
+<div class="item-double premier"> <!-- premier project -->
 <h4>PERSONAL 404 PAGE</h4>
   <p>Stephen King once said "There's no harm in hoping for the best as long as you're prepared for the worst."
   I ran with those words of wisdom and created my own 404 page as soon as I knew how. 
   Hopefully you never have to see it outside of this presentation!</p>
   <p>For this page, I utilized HTML and CSS.</p>
-  <a href="./404.html" class="darktext">Click here to check it out.</a>
+  <a href="./404.html">Click here to check it out.</a>
   <img src="./images/404-page.jpg">
 </div>
 
-    <div class="column item paddedsides"> <!-- other projects -->
+    <div class="column item"> <!-- other projects -->
       <div class="column item">
       <h4>PROJECT 2</h4>
-        1-2 sentences describing the project
-        skills used
-        project link
+        <p>1-2 sentences describing the project</p>
+        <p>skills used</p>
+        <p>project link</p>
           </div>
 
       <div class="column item">
       <h4>PROJECT 3</h4>
-        1-2 sentences describing the project
-        skills used
-        project link
+      <p>1-2 sentences describing the project</p>
+      <p>skills used</p>
+      <p>project link</p>
           </div>
 
       <div class="column item">
       <h4>PROJECT 4</h4>
-        1-2 sentences describing the project
-        skills used
-        project link
+      <p>1-2 sentences describing the project</p>
+      <p>skills used</p>
+      <p>project link</p>
           </div>
 
     </div>
@@ -149,7 +165,7 @@
 
 <h3>CONTACT ME</h3> 
 <p>Ideas, advice, recruitment and new friends are welcome!</p> 
-<p class="contactme"><a href="https://linktr.ee/jenna.chestnut">Click here for my Linktree</a></p>
+<p class="contactme"><a href="https://linktr.ee/jenna.chestnut" target="_blank">[Click here for my Linktree</a></p>
 </div>
 
 
@@ -164,7 +180,31 @@
     <div class="item">
   <a href="mailto:jennabot5000@gmail.com"><img src="./images/email-icon-orange.jpg" alt="Send an Email"></a>
     </div> 
-  </div></div></div>
+  </div>
+
+  <!-- EMAIL FORM -->
+  <div class="wide">
+  <form action="https://formspree.io/jennabot5000@gmail.com" method="post">
+    <fieldset>
+      <legend>SEND A MESSAGE</legend>
+
+      <label class="email" for="name">NAME:</label>
+      <input type="text" id="name" name="name" placeholder="Jill Coolgal"></input>
+
+      <label class="email" for="emailaddress">EMAIL:</label>
+      <input type="email" name="_replyto" id="emailaddress" placeholder="ie coolgal@galspot.com"></input>
+
+      <label class="email" for="email">MESSAGE:</label>
+      <textarea
+        id="email"
+        name="message"
+        placeholder="Hi Jenna, you are super awesome! Let's be friends!"
+      ></textarea>
+
+      <button type="submit">SEND</button>
+    </fieldset>
+  </form>
+</div>
 </article>
 </main>
 

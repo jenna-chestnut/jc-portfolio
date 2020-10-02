@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Josefin+Slab:wght@300&display=swap'); /* imported fonts from Google to be used on webpage */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Josefin+Slab:wght@300&display=swap"); /* imported fonts from Google to be used on webpage */
 
 /* edits to entire areas */
 
 body {
-  background-image: url('../images/lushfoliage-redgreen.jpg');
+  background-image: url("../images/lushfoliage-redgreen.jpg");
   background-attachment: fixed;
   background-color: rgb(166, 206, 185);
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   flex-direction: column;
   margin: 0;
 }
 
-header, footer {
+header,
+footer {
   background-color: rgb(0, 65, 48);
   color: aliceblue;
   text-align: center;
@@ -22,11 +23,11 @@ header, footer {
 /* edits to particular sections */
 
 main {
-  background-color: #a6ceb9bf; 
+  background-color: #a6ceb9bf;
 }
 
 h1 {
-  font-family: 'Josefin Slab', serif;
+  font-family: "Josefin Slab", serif;
   font-size: 35px;
   letter-spacing: 5px;
   color: aliceblue;
@@ -41,15 +42,25 @@ h2 {
 }
 
 h3 {
-  text-align:center;
+  font-size: 25px;
+  text-align: center;
   margin: auto;
   padding: 30px 0 20px 0;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  letter-spacing: 5px;
 }
 
-/* this edits our horizontal ruler to it's pretty color and specific size */
+h4 {
+  font-family: "Josefin Slab", serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+/* this edits our horizontal ruler to it's pretty look and specific size */
 hr {
   border: none;
-  background-image: url('../images/lushfoliage-redgreen.jpg');
+  background-image: url("../images/lushfoliage-redgreen.jpg");
   background-attachment: fixed;
   background-color: rgba(47, 86, 50, 0);
   width: 50%;
@@ -58,23 +69,39 @@ hr {
 
 /* these rules edit our hyperlink text */
 
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
-color: rgb(0, 65, 48);
+  color: rgb(0, 65, 48);
 }
 
 a:hover {
-font-weight: bold;
-color: rgb(255, 102, 0);
+  font-weight: bold;
+  color: rgb(255, 102, 0);
 }
 
-a:active {
-color: rgb(0, 255, 179);
+a:active,
+a.darkgreen:active,
+nav a:active {
+  color: rgb(251, 255, 0);
+}
+
+.darkgreen a:link,
+.darkgreen a:visited,
+nav a:link,
+nav a:visited {
+  color: rgb(226, 241, 237);
+}
+
+.darkgreen a:hover,
+nav a:hover {
+  font-weight: bold;
+  color: rgb(255, 102, 0);
 }
 
 /*using "center" to center entire div content */
 .center {
-  text-align:center;
+  text-align: center;
 }
 
 /* edit a single line of text */
@@ -90,13 +117,19 @@ color: rgb(0, 255, 179);
   padding-bottom: 20%;
 }
 
-/* sizing my buttons */
+/* sizing contact me buttons */
 .buttons {
   width: 75%;
   margin: auto;
   display: flex;
   flex-direction: row;
   padding: 5px 0;
+  max-width: 500px;
+}
+
+.buttons img {
+  width: 90%;
+  padding: 5% 0;
 }
 
 /* these create a more uniform/consolidated look between certain divs*/
@@ -106,12 +139,8 @@ color: rgb(0, 255, 179);
 }
 
 .topspace {
-  padding-top: 40px;
+  padding-top: 30px;
   margin: 0;
-}
-
-.paddedsides {
-  padding: 0 5%;
 }
 
 .column {
@@ -119,8 +148,8 @@ color: rgb(0, 255, 179);
 }
 
 .wrapper {
-  width:75%;
-  margin:auto;
+  width: 75%;
+  margin: auto;
 }
 
 .wide {
@@ -142,12 +171,12 @@ color: rgb(0, 255, 179);
 }
 
 .headshot {
-    background-image: url('../images/jenna-smile-woodsbackground.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 300px;
-  }
+  background-image: url("../images/jenna-smile-woodsbackground.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+}
 
 .contactme {
   padding-bottom: 30px;
@@ -155,15 +184,6 @@ color: rgb(0, 255, 179);
 
 .lightgreen {
   background-color: #cae6d8f2;
-}
-
-a.darktext:link, a.darktext:visited {
-  color: rgb(226, 241, 237);
-}
-
-a.darktext:hover {
-  font-weight: bold;
-  color: rgb(255, 102, 0);
 }
 
 .darkgreen {
@@ -177,17 +197,101 @@ a.darktext:hover {
   max-width: 500px;
 }
 
-.buttons img {
- width: 90%;
- padding: 5% 0;
+.bubble {
+  background-color: #cae6d87c;
+  border-radius: 7px;
+  width: 65%;
+  margin: auto;
 }
 
 img {
   width: 100%;
 }
 
+.item ul {
+  margin: auto;
+}
+
+nav ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 3%;
+  float: right;
+}
+
+nav ul li {
+  margin: 20px 0;
+}
+
+/* for our email form */
+fieldset {
+  background-color: rgba(0, 65, 48, 0.445);
+  border-radius: 5px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+legend {
+  background-color: #ffffff;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 5px;
+  color: #024700;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  text-align: center;
+}
+
+label,
+button {
+  display: block;
+  margin: auto;
+  padding-left: 5%;
+}
+
+form {
+  padding-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"] {
+  margin: 20px;
+  width: 75%;
+  color: #000000;
+}
+
+textarea {
+  width: 90%;
+  min-height: 100px;
+  margin: 20px;
+  color: #000000;
+}
+
+label {
+  font-family: "Josefin Slab", serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  display: block;
+  font-family: "Josefin Slab", serif;
+  letter-spacing: 5px;
+  padding: 10px 20px;
+  font-size: 20x;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: rgb(255, 102, 0);
+  border-style: none;
+  border-radius: 5px;
+}
+
 /* for a cleaner desktop structure/layout */
-@media all and (min-width:800px) {
+@media all and (min-width: 800px) {
   .headshot {
     height: 500px;
   }
@@ -211,5 +315,23 @@ img {
   }
   h2 {
     font-size: 25px;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 20px;
+    float: right;
+    font-size: 20px;
+  }
+  nav ul li {
+    margin: 0 20px;
+  }
+  .item ul {
+    margin-left: 30px;
+  }
+  .premier {
+    padding-right: 30px;
   }
 }

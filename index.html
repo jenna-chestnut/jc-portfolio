@@ -1,106 +1,267 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <!-- head of the webpage includes title, meta details and stylesheet links -->
   <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Jenna Chestnut - Thinkful Student</title>
-   <link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet" type="text/css">
-   <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jenna Chestnut - Thinkful Student</title>
+    <link
+      href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
   </head>
 
-<!-- body of the webpage contains all of the visible content -->
-<body>
-  <header>
-   <h1>Jenna Chestnut</h1>
-   <h2>Software Engineering Student</h2>
-  </header>
+  <!-- body of the webpage contains all of the visible content -->
+  <body>
+    <header id="home">
+      <!-- responsive nav floating over headshot -->
+      <nav class="responsive">
+        <ul id="navbar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#myprojects">Projects</a></li>
+          <li><a href="#contactme">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<main>
-  <div class="column">
+    <main>
+      <div class="headshot">
+        <!-- headshot and name/title on top of page -->
+        <h1>JENNA CHESTNUT</h1>
+        <h2>Web Development Student</h2>
+      </div>
 
-<!-- this article contains the "intro" section -->
-<article class="center wrapper">
-<!-- Headshot -->
-<div class="item">
-<img src="https://gdurl.com/B2HM" class="round" alt="Jenna's Headshot">
+      <div class="lightgreen">
+        <!-- intro -->
+        <div class="wrapper">
+          <article id="intro" class="center bottomspace">
+            <p class="special">CREATIVE CALCULATIONS</p>
 
-<p class="special">CREATIVE CALCULATIONS</p>
+            <h4>
+              Hi there! I'm Jenna and I'm a web developer (in the making) living
+              in Nashville, Tennessee.
+            </h4>
+            <p>
+              I have a genuine love for technology and how it helps to better
+              the world through connection and innovation - and I'm beyond
+              excited to meet, collaborate and learn with others who feel the
+              same way.
+            </p>
+            I hope you enjoy my website, and please don't hesitate to send a
+            message. Don't forget to <a href="#contactme">follow me</a>!
+          </article>
+        </div>
+      </div>
 
-<h4>Hi there! I'm Jenna and I'm a web developer (in the making) living in Nashville, Tennessee.</h4>
-  <p>I have a genuine love for technology and how it helps to better the world through connection and innovation - and I'm beyond excited to meet, collaborate and learn with others who feel the same way.</p>
-  I hope you enjoy my website, and please don't hesitate to send a message. Don't forget to follow me!
-  </div>
-</article>
+      <hr />
+      <!-- horizontal ruler -->
 
-<hr> <!-- horizontal ruler -->
+      <div class="darkgreen">
+        <!-- about me -->
+        <article id="aboutme" class="wide">
+          <h3>ABOUT ME</h3>
+          <!-- general description, my love of web and why -->
 
-<!-- this article contains the "about me" section and keeps our lists together within the column -->
-<article class="wrapper">
-<h3>Jenna's Story</h3>
+          <p>
+            Since my first login, I've always had a penchant for navigating
+            computer systems. The purposeful shift from restaurant industry to
+            the medical field in 2017 gave me an opportunity to further explore
+            my tech skills, and fulfill my drive to improve the lives of others.
+          </p>
 
-  <p>Since my first login, I've always had a penchant for navigating computer systems. The purposeful shift from restaurant industry to the medical field in 2017 gave me an opportunity to further explore my tech skills, and fulfill my drive to improve the lives of others. </p>
-  
-  <p>As the go-to person for error messages, website tweaks and needed fixes when IT isn't around, I know that I want to learn and accomplish much more. Now that I have signed up for the Thinkful Engineering Immersion program, I am taking important steps to making this goal a reality!</p>
+          <p class="bottomspace">
+            As the go-to person for error messages, website tweaks and needed
+            fixes when IT isn't around, I know that I want to learn and
+            accomplish much more. Now that I have signed up for the Thinkful
+            Engineering Immersion program, I am taking important steps to making
+            this goal a reality.
+          </p>
 
-  <p>Let's connect if you are looking for a study buddy, a mentee or a future web developer.</p>
+          <section class="group spacebetween">
+            <div class="item bottomspace">
+              <h4 class="center">OUTSIDE OF TECH</h4>
+              <!-- personality outside of work -->
+              During my down time, I love exploring in nature and hiking with my
+              dog <a href="https://gdurl.com/cHqw" target="_blank">Salem</a>! I
+              love taking pictures and have a Nikon D3300. I've always enjoyed
+              video games as well. I'm currently into first person survival
+              style games that involve puzzles - Outer Wilds is a personal
+              favorite. I also enjoy singing, painting, and trying/making new
+              foods.
+            </div>
 
-<section class="group">
-  <div class ="item">
-  <h4>Interests:</h4>
-  <ul><!-- unordered list -->
-    <li>Hiking</li>
-    <li>Singing</li>
-    <li>Video games</li>
-    <li>Learning how to code</li>
-    <li>Painting</li>
-    <li>Playing with my dog <a href="https://gdurl.com/cHqw" target="_blank">Salem</a>!</li>
-    <li>Trying new foods</li>
-    </ul>
-  </div>
+            <div class="item bottomspace">
+              <h4 class="center">MILESTONES</h4>
+              <!-- important milestones, will update as time goes and I have more exciting things :-) -->
+              <ul>
+                <li>Born in Alabama</li>
+                <li>
+                  Edited first code in 2006 <br />
+                  (think MySpace)
+                </li>
+                <li>Obtained GED</li>
+                <li>Lived in TX, NH, and TN</li>
+                <li>Senior role at a small business</li>
+                <li>Passed first technical interview <br />with Thinkful</li>
+              </ul>
+            </div>
+          </section>
+        </article>
+      </div>
 
-  <div class ="item">
-  <h4>Milestones:</h4>
-  <ol><!-- ordered list -->
-    <li>Born in Alabama</li>
-    <li>Edited first code in 2006</li>
-    <li>Obtained GED</li>
-    <li>Lived in TX, NH, and TN</li>
-    <li>Senior role at a small business
-    <li>Passed first technical interview <br>with Thinkful</li>
-  </ol>
-  </div>
-  </section>
-</article>
+      <hr />
+      <!-- horizontal ruler -->
 
-<hr> <!-- horizontal ruler -->
+      <div class="bubble">
+        <!--to switch up our look -->
+        <div class="wide">
+          <h4 class="center topspace">LET'S CONNECT</h4>
+          <!-- looking to connect/work with others -->
+          <p>
+            My past work history has always involved working with a closely knit
+            team. While I have been able to manage and complete tasks in
+            solitude, cooperation and collaboration can be paramount in
+            successfully achieving goals. As someone new and enthusiastic to the
+            field I would love to meet and work with others that have the same
+            passion... whether that be teammates to embrace growth and learning
+            with, or a mentor for guidance.
+          </p>
 
-<!-- this article contains the "contact me" section -->
-<article class="center space wrapper">
+          <p class="center">
+            If you are looking for a study buddy, a mentee or a future web
+            developer - <a href="#contactme">let's connect</a>!
+          </p>
 
-<h3>Contact Jenna</h3>
-  <p>Ideas, advice, recruitment and new friends are welcome!</p> 
+          <div class="center bottomspace">
+            <h4 class="topspace">SERVICES PROVIDED</h4>
+            <!-- services -->
+            <p>Static and Dynamic Web Development</p>
+            <p>Responsive Design</p>
+            <p>Website Redesign</p>
+            <p>Website Management</p>
+            <p>Server Side Programming</p>
+            <p>Web Based Applications</p>
+            <p>Membership Services</p>
+          </div>
+        </div>
+      </div>
 
-  <!-- Contact me buttons -->
-  <div class="group buttons">
-    <div class="item">
-  <a href="https://www.linkedin.com/in/jenna-chestnut/" target="_blank"><img src="./images/linkedin-icon.png" alt="LinkedIn"></a>
-    </div>
-    <div class="item">
-  <a href="https://github.com/jenna-chestnut" target="_blank"><img src="./images/githublogo.png" alt="GitHub"></a>
-    </div>
-    <div class="item">
-  <a href="mailto:jennabot5000@gmail.com"><img src="./images/email-icon-orange.jpg" alt="Send an Email"></a>
-    </div> 
-  </div>
-</article>
+      <hr />
+      <!-- horizontal ruler -->
 
-  </div>
-</main>
+      <div class="darkgreen">
+        <!-- my projects -->
+        <article id="myprojects" class="wide">
+          <h3>MY PROJECTS</h3>
 
-  <footer>
-     © Jenna Chestnut / Jennabot5000
-  </footer>
+          <div class="group bottomspace">
+            <!--contains all projects-->
+            <div class="item-double premier">
+              <!-- premier project -->
+              <h4>PERSONAL 404 PAGE</h4>
+              <p>
+                Stephen King once said "There's no harm in hoping for the best
+                as long as you're prepared for the worst." I ran with those
+                words of wisdom and created my own 404 page as soon as I knew
+                how. Hopefully you never have to see it outside of this
+                presentation!
+              </p>
+              <p>For this page, I utilized HTML and CSS.</p>
+              <a href="./404.html">Click here to check it out.</a>
+              <img src="./images/404-page.jpg" alt="404 page screenshot" />
+            </div>
 
- </body>
+            <div class="column item">
+              <!-- other projects -->
+              <div class="column item">
+                <h4>PROJECT 2</h4>
+                <p>1-2 sentences describing the project</p>
+                <p>skills used</p>
+                <p>project link</p>
+              </div>
+
+              <div class="column item">
+                <h4>PROJECT 3</h4>
+                <p>1-2 sentences describing the project</p>
+                <p>skills used</p>
+                <p>project link</p>
+              </div>
+
+              <div class="column item">
+                <h4>PROJECT 4</h4>
+                <p>1-2 sentences describing the project</p>
+                <p>skills used</p>
+                <p>project link</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <hr />
+      <!-- horizontal ruler -->
+
+      <div class="lightgreen">
+        <!-- "contact me" section -->
+        <article id="contactme">
+          <div class="center wrapper">
+            <h3>CONTACT ME</h3>
+            <p>Ideas, advice, recruitment and new friends are welcome!</p>
+            <p class="contactme">
+              <a href="https://linktr.ee/jenna.chestnut" target="_blank"
+                >[Click here for my Linktree]</a
+              >
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <!-- contact me buttons -->
+      <div class="center wrapper buttons">
+        <div class="item">
+          <a href="https://www.linkedin.com/in/jenna-chestnut/" target="_blank"
+            ><img src="./images/linkedin-icon.png" alt="LinkedIn"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="https://github.com/jenna-chestnut" target="_blank"
+            ><img src="./images/githublogo.png" alt="GitHub"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="mailto:jennabot5000@gmail.com"
+            ><img src="./images/email-icon-orange.jpg" alt="Send an Email"
+          /></a>
+        </div>
+      </div>
+
+      <!-- EMAIL FORM -->
+      <div class="wide">
+        <form
+          action="https://formspree.io/jennabot5000@gmail.com"
+          method="post"
+        >
+          <fieldset>
+            <legend>SEND A MESSAGE</legend>
+
+            <label class="topspace" for="name">NAME:</label>
+            <input type="text" id="name" name="name" />
+
+            <label class="email" for="emailaddress">EMAIL:</label>
+            <input type="email" name="_replyto" id="emailaddress" />
+
+            <label class="email" for="email">MESSAGE:</label>
+            <textarea id="email" name="message"></textarea>
+
+            <button type="submit">SEND</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+
+    <footer>© Jenna Chestnut / Jennabot5000</footer>
+  </body>
 </html>

@@ -1,7 +1,7 @@
-# jenna-chestnut-portfolio
- First Portfolio Website
+# jc-portfolio
+Portfolio Website
 
-This is my first portfolio website as an assignment for my Thinkful prep course!
+This is my portfolio website, which will be continually updated during various assignment for my Thinkful Software Engineering Immersion program.
 
 ## Layout:
 - Heading: Name -> Title
@@ -11,10 +11,10 @@ This is my first portfolio website as an assignment for my Thinkful prep course!
 ## More about me
 
 * 28 years old
-* New to coding and enthusiastic about tech
+* New to coding and lifelong techie
 * [GitHub profile](https://github.com/jenna-chestnut)
-* [Twitter](https://twitter.com/Jennabot5000)
+* [LinkTr.ee](https://linktr.ee/jenna.chestnut) - Let's connect!
 
 ## Gratitude:
 
-Thank you Thinkful, mentors and peers for everything I have learned thus far!
+Thank you Thinkful, mentors and peers for everything I have learned thus far. :-)

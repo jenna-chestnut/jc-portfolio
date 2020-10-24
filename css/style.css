@@ -1,15 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis&family=Josefin+Slab:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 /* imported fonts from Google to be used on webpage */
 
 /* edits to entire areas */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url("../images/lushfoliage-redgreen.jpg");
   background-attachment: fixed;
   background-color: rgb(166, 206, 185);
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Nanum Gothic", arial;
   flex-direction: column;
   margin: 0;
+  font-size: 20px;
+  line-height: 200%;
 }
 
 header,
@@ -20,40 +27,40 @@ footer {
   padding: 0;
 }
 
+header {
+  width: 100%;
+  position: fixed;
+}
+
 main {
   background-color: #a6ceb9bf;
+  margin: auto;
 }
 
 /* edits to specific elements */
 h1 {
-  font-family: "Josefin Slab", serif;
-  font-size: 35px;
-  letter-spacing: 5px;
+  font-family: "Josefin Slab", arial;
+  background-color: rgba(25, 46, 27, 0.288);
+  font-size: 30px;
+  letter-spacing: 7px;
   color: aliceblue;
-  margin: 0 0 0 2%;
-  padding-top: 10px;
-}
-
-h2 {
-  color: aliceblue;
-  margin: 0 0 0 2%;
-  padding-bottom: 50%;
-  font-size: 17px;
+  margin: 0;
+  padding: 10px 0px 0px 7px;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
   margin: auto;
   padding: 30px 0 20px 0;
-  font-family: "Josefin Slab", serif;
+  font-family: "Josefin Slab", arial;
   font-weight: bold;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
 }
 
 h4 {
-  font-family: "Josefin Slab", serif;
-  font-size: 20px;
+  font-family: "Josefin Slab", arial;
+  font-size: 27px;
   letter-spacing: 2px;
 }
 
@@ -94,9 +101,11 @@ nav a:visited {
 }
 
 .darkgreen a:hover,
+.orange, .x:hover,
 nav a:hover {
   font-weight: bold;
   color: rgb(255, 102, 0);
+  text-shadow: 0 0 2px rgb(255, 102, 0), 0 0 7px #FFFFFF;
 }
 
 /*using "center" to center entire div content */
@@ -106,16 +115,17 @@ nav a:hover {
 
 /* edit a single line of text */
 .special {
-  font-weight: lighter;
+  font-family: 'Bad Script', cursive;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: bold;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.white {
   color: #ffffff;
-  font-size: 170%;
-  letter-spacing: 5px;
-  font-style: italic;
-  margin: 0;
-  line-height: 0;
-  padding: 0 0 5% 0;
-  display: inline;
-  padding-bottom: 20%;
 }
 
 /* sizing contact me buttons */
@@ -139,15 +149,18 @@ img {
 }
 
 nav ul {
-  display: block;
+  display: flex;
+  justify-content: space-evenly;
   list-style: none;
   margin: 0;
-  padding: 3%;
-  float: right;
+  padding: 5% 3%;
+  line-height: 100%;
+  letter-spacing: 2px;
+  font-size: 16px;
 }
 
 nav ul li {
-  margin: 20px 0;
+  margin: 0 10px;
 }
 
 .bottomspace {
@@ -169,7 +182,7 @@ nav ul li {
   margin: auto;
 }
 
-.wide {
+.wide, .wider {
   width: 90%;
   margin: auto;
 }
@@ -186,10 +199,14 @@ nav ul li {
 
 .item {
   flex: 1;
+  margin: 0 1%;
 }
 
-.item-double {
-  flex: 2;
+.project {
+  padding: 0 5% 1% 5%;
+  margin: 1%;
+  background-color: #13161552;
+  border-radius: 7px;
 }
 
 /* using classes to further edit specific elements */
@@ -199,6 +216,7 @@ nav ul li {
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
+  padding-top: 50px;
 }
 
 .lightgreen {
@@ -212,8 +230,7 @@ nav ul li {
 
 .darkgreen img {
   padding: 5% 5% 0 0;
-  margin: 0 10% 0 0;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .bubble {
@@ -227,9 +244,32 @@ nav ul li {
   margin: auto;
 }
 
+.mobilenav {
+  background: none;
+  color: rgb(255, 102, 0);
+  border: solid 1px rgb(255, 102, 0);
+  height: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.smaller p, .smaller a {
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 0px;
+  text-align: justify;
+}
+
+.smaller h4 {
+  padding-top: 0;
+  margin-bottom: 2%;
+}
+
 /* for our email form */
 fieldset {
-  background-color: rgba(0, 65, 48, 0.445);
+  background-color:  #17312952;
+  border: 2px solid #17312952;
   border-radius: 5px;
   font-size: 20px;
   color: #ffffff;
@@ -262,16 +302,18 @@ form {
 input[type="text"],
 input[type="email"] {
   font-size: 20px;
-  margin: 20px;
-  width: 75%;
+  margin: 0 20px 10px 20px;
+  padding: 10px;
+  width: 80%;
   color: #000000;
 }
 
 textarea {
   font-size: 20px;
   width: 80%;
+  padding: 10px;
   min-height: 100px;
-  margin: 20px;
+  margin: 0 20px;
   color: #000000;
 }
 
@@ -281,13 +323,14 @@ label {
   letter-spacing: 2px;
   margin: auto;
   padding-left: 5%;
+  padding-bottom: 5px;
   display: block;
 }
 
 button[type="submit"] {
   font-family: "Josefin Slab", serif;
   letter-spacing: 5px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   color: #ffffff;
   background-color: rgb(255, 102, 0);
@@ -298,15 +341,15 @@ button[type="submit"] {
 
 /* media query to adjust for our desktop structure/layout */
 @media all and (min-width: 800px) {
+  .body {
+    font-size: 25px;
+  }
   .headshot {
     height: 500px;
+    padding: 5px;
   }
   .group {
     flex-direction: row;
-  }
-  .special {
-    letter-spacing: 5px;
-    font-size: 250%;
   }
   .buttons {
     width: 50%;
@@ -318,11 +361,17 @@ button[type="submit"] {
   h1 {
     font-size: 55px;
     letter-spacing: 10px;
+    float: right;
+    display: flex;
+    padding-bottom: 3%;
+    background: none;
   }
   h2 {
     font-size: 25px;
   }
   nav ul {
+    position: absolute;
+    background-color: rgba(25, 46, 27, 0.288);
     display: flex;
     list-style: none;
     justify-content: flex-end;
@@ -342,6 +391,9 @@ button[type="submit"] {
   textarea {
     margin-left: 7%;
   }
+  legend {
+    padding: 10px 20px;
+  }
   .item ul {
     margin-left: 30px;
   }
@@ -353,5 +405,23 @@ button[type="submit"] {
   }
   .wide {
     width: 65%;
+  }
+  .wider {
+    width: 90%;
+  }
+  .darkgreen img {
+    margin: 0 10% 0 0;
+  }
+  .special {
+    font-size: 70px;
+    padding-top: 30px;
+    font-style: italic;
+    letter-spacing: 6px;
+  }
+  .mobilenav {
+    display: none;
+  }
+  .project {
+    padding: 0 2% 1% 2%;
   }
 }

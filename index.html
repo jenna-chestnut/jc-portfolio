@@ -11,6 +11,7 @@
       type="text/css"
     />
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <!-- body of the webpage contains all of the visible content -->
@@ -20,30 +21,31 @@
       <nav class="responsive">
         <ul id="navbar">
           <li><a href="#home">Home</a></li>
-          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#aboutme">About</a></li>
           <li><a href="#myprojects">Projects</a></li>
-          <li><a href="#contactme">Contact Me</a></li>
+          <li><a href="#contactme">Contact</a></li>
         </ul>
       </nav>
+      <hr class="mobilenav" />
     </header>
 
     <main>
       <div class="headshot">
         <!-- headshot and name/title on top of page -->
         <h1>JENNA CHESTNUT</h1>
-        <h2>Web Development Student</h2>
       </div>
 
+      <p class="special white">CREATIVE CALCULATIONS</p>
       <div class="lightgreen">
         <!-- intro -->
         <div class="wrapper">
           <article id="intro" class="center bottomspace">
-            <p class="special">CREATIVE CALCULATIONS</p>
-
-            <h4>
-              Hi there! I'm Jenna and I'm a web developer (in the making) living
-              in Nashville, Tennessee.
-            </h4>
+            <p class="topspace">
+              <b
+                >Hi there! I'm Jenna and I'm a web developer (in the making)
+                living in Nashville, Tennessee.</b
+              >
+            </p>
             <p>
               I have a genuine love for technology and how it helps to better
               the world through connection and innovation - and I'm beyond
@@ -80,17 +82,21 @@
             this goal a reality.
           </p>
 
-          <section class="group spacebetween">
-            <div class="item bottomspace">
+          <section class="group spacebetween bottomspace">
+            <div class="item">
               <h4 class="center">OUTSIDE OF TECH</h4>
               <!-- personality outside of work -->
-              During my down time, I love exploring in nature and hiking with my
-              dog <a href="https://gdurl.com/cHqw" target="_blank">Salem</a>! I
-              love taking pictures and have a Nikon D3300. I've always enjoyed
-              video games as well. I'm currently into first person survival
-              style games that involve puzzles - Outer Wilds is a personal
-              favorite. I also enjoy singing, painting, and trying/making new
-              foods.
+              <p>
+                During my down time, I love exploring in nature and hiking with
+                my dog
+                <a href="./images/salemthedog-smiling.jpg" target="_blank"
+                  >Salem</a
+                >! I love taking pictures and have a Nikon D3300. I've always
+                enjoyed video games as well. I'm currently into first person
+                survival style games that involve puzzles - Outer Wilds is a
+                personal favorite. I also enjoy singing, painting, and
+                trying/making new foods.
+              </p>
             </div>
 
             <div class="item bottomspace">
@@ -154,14 +160,12 @@
 
       <div class="darkgreen">
         <!-- my projects -->
-        <article id="myprojects" class="wide">
+        <article id="myprojects" class="wider smaller">
           <h3>MY PROJECTS</h3>
 
           <div class="group bottomspace">
-            <!--contains all projects-->
-            <div class="item-double premier">
-              <!-- premier project -->
-              <h4>PERSONAL 404 PAGE</h4>
+            <div class="item project">
+              <h4>PERSONAL 404</h4>
               <p>
                 Stephen King once said "There's no harm in hoping for the best
                 as long as you're prepared for the worst." I ran with those
@@ -171,31 +175,37 @@
               </p>
               <p>For this page, I utilized HTML and CSS.</p>
               <a href="./404.html">Click here to check it out.</a>
-              <img src="./images/404-page.jpg" alt="404 page screenshot" />
+              <a href="./404.html">
+                <img src="./images/404-page.jpg" alt="404 page screenshot"
+              /></a>
+            </div>
+            <div class="item project">
+              <h4>DON'T SPACE OUT!</h4>
+              <p>
+                Think you know enough about the cosmos? Test your space
+                knowledge with this simple 6 question quiz!
+              </p>
+              <p>
+                For this page, I utilized HTML, CSS and Javascript, as well as
+                jQuery to render the DOM. For a comprehensive and easy-to-edit
+                code, I utilized "mini functions" and callbacks to make the app
+                run.
+              </p>
+              <a href="https://jenna-chestnut.github.io/quizapp-ei/"
+                >Click here to try for yourself!</a
+              >
+              <a href="https://jenna-chestnut.github.io/quizapp-ei/">
+                <img
+                  src="./images/space-quiz-screenshot.jpg"
+                  alt="space quiz screenshot"
+              /></a>
             </div>
 
-            <div class="column item">
-              <!-- other projects -->
-              <div class="column item">
-                <h4>PROJECT 2</h4>
-                <p>1-2 sentences describing the project</p>
-                <p>skills used</p>
-                <p>project link</p>
-              </div>
-
-              <div class="column item">
-                <h4>PROJECT 3</h4>
-                <p>1-2 sentences describing the project</p>
-                <p>skills used</p>
-                <p>project link</p>
-              </div>
-
-              <div class="column item">
-                <h4>PROJECT 4</h4>
-                <p>1-2 sentences describing the project</p>
-                <p>skills used</p>
-                <p>project link</p>
-              </div>
+            <div class="item project">
+              <h4>PROJECT 3</h4>
+              <p>1-2 sentences describing the project</p>
+              <p>skills used</p>
+              <p>project link</p>
             </div>
           </div>
         </article>
@@ -208,7 +218,7 @@
         <!-- "contact me" section -->
         <article id="contactme">
           <div class="center wrapper">
-            <h3>CONTACT ME</h3>
+            <h3>CONTACT</h3>
             <p>Ideas, advice, recruitment and new friends are welcome!</p>
             <p class="contactme">
               <a href="https://linktr.ee/jenna.chestnut" target="_blank"
@@ -261,7 +271,8 @@
         </form>
       </div>
     </main>
-
+    <script src="app.js"></script>
     <footer>© Jenna Chestnut / Jennabot5000</footer>
+    <script src="./js/app.js"></script>
   </body>
 </html>
